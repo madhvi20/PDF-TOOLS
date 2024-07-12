@@ -1,0 +1,342 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    padding: 20px 0;
+    border-bottom: #444 1px solid;
+    transition: background 0.3s ease-in-out;
+}
+
+header .logo {
+    float: left;
+    max-height: 50px;
+}
+
+header nav {
+    float: left;
+    margin-top: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #f90;
+}
+
+header .cta-buttons {
+    float: right;
+    margin-top: 10px;
+}
+
+header .btn {
+    background: #f90;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+header .btn.secondary {
+    background: #555;
+    color: #fff;
+    border: #777 1px solid;
+    transition: background 0.3s ease-in-out;
+}
+
+header .btn:hover,
+header .btn.secondary:hover {
+    background: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('../images/hero-image.png') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero .btn {
+    background: #f90;
+    border: 0;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #333;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 60px 0;
+    background: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature img {
+    max-width: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature img:hover {
+    transform: rotate(10deg);
+}
+
+.feature h3 {
+    margin: 20px 0;
+}
+
+.feature .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.feature .btn:hover {
+    background: #f90;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 60px 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial img:hover {
+    transform: rotate(-10deg);
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    margin: 0;
+}
+
+.testimonial p {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Pricing Section Styles */
+.pricing {
+    padding: 60px 0;
+    background: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: 30%;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    margin: 20px 0;
+}
+
+.plan p {
+    font-size: 24px;
+    color: #333;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.plan .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.plan .btn:hover {
+    background: #f90;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #f90;
+}
+
+.social-media a img {
+    max-width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
